@@ -1,0 +1,284 @@
+<html>
+ <head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Simple Page </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+@media (max-width: 480px) {
+    body {
+        font-family: 'Roboto', sans-serif !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background-color: #f0f0f0 !important;
+    }
+
+    .container {
+        max-width: 100% !important;
+        margin: 0 !important;
+        background-color: #e0f7fa !important;
+        border-radius: 10px !important;
+        padding: 10px !important;
+    }
+
+    .profile-img {
+        width: 95% !important;
+        margin:10px;
+        border-radius: 30px 0px 30px 0px !important;
+    }
+
+    .profile-info {
+        text-align: center !important;
+        margin-top: 10px !important;
+    }
+
+    .profile-info h2 {
+        font-size: 18px !important;
+        margin: 5px 0 !important;
+    }
+
+    .profile-info p {
+        font-size: 14px !important;
+        color: #666 !important;
+    }
+
+    .social-icons a {
+        font-size: 24px !important;
+        margin: 0 10px !important;
+    }
+
+    .photo-gallery {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 5px !important;
+    }
+
+    .photo-gallery img {
+        width: 48% !important;
+        border-radius: 5px !important;
+        margin:0 auto;
+    }
+
+    .section-title {
+        background-color: #b2ebf2 !important;
+        padding: 8px !important;
+        border-radius: 5px !important;
+        margin: 15px 0 !important;
+        font-size: 18px !important;
+    }
+
+    .service-section {
+        display: block !important;
+        padding: 10px !important;
+    }
+
+    .service-container {
+        display: block !important;
+    }
+
+    .service {
+        width: 100% !important;
+        border: 1px solid #ddd !important;
+        padding: 20px !important;
+        box-sizing: border-box !important;
+        border-radius: 5px !important;
+        background-color: #fff !important;
+        margin-bottom: 10px !important;
+    }
+
+    .service h3 {
+        font-size: 1.1em !important;
+        color: #00796b !important;
+    }
+
+    .service p {
+        font-size: 14px !important;
+        margin: 5px 0 !important;
+    }
+}
+
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #e0f7fa;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .profile-img {
+            width: 100%;
+            border-radius: 30px 0 30px 0 ;
+        }
+        .profile-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .profile-info h2 {
+            margin: 10px 0;
+        }
+        .profile-info p {
+            color: #666;
+        }
+        .social-icons {
+            margin: 10px 0;
+        }
+        .social-icons a {
+            color: #1a3b6b;
+            margin: 0 5px;
+            font-size: 30px;
+            text-decoration:none;
+        }
+        .section-title {
+            background-color: #b2ebf2;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 20px 0 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size:20px;
+        }
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .photo-gallery img {
+            width: calc(50% - 5px);
+            border-radius: 5px;
+        }
+.service-section {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+    /* Điều chỉnh dịch vụ khi hover */
+    .service {
+        width: calc(50% - 10px); /* Chia 2 cột */
+        border: 1px solid #ddd;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        transition: all 0.3s ease; /* Thêm hiệu ứng chuyển tiếp */
+        background-color: #fff; /* Màu nền mặc định */
+    }
+
+    .service:hover {
+        background-color: #e0f7fa; /* Thay đổi màu nền khi hover */
+        transform: translateY(-5px); /* Dịch chuyển nhẹ lên */
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ */
+    }
+
+    .service h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        color: #00796b; /* Màu tiêu đề dịch vụ */
+    }
+
+    .service p {
+        margin: 5px 0;
+        color: #555; /* Màu chữ của mô tả */
+    }
+
+    /* Thêm hiệu ứng cho các giá trị dịch vụ */
+    .service p:first-of-type {
+        font-weight: bold;
+        color: #1a3b6b; /* Màu giá trị */
+    }
+
+    /* Thêm hiệu ứng hover cho các đoạn mô tả trong dịch vụ */
+    .service p:hover {
+        color: #00796b;
+        cursor: pointer;
+    }
+
+    .social-icons a:hover {
+        color: #ff4081; 
+        transform: scale(1.2);
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .photo-gallery img:hover {
+        transform: scale(1.05); 
+        transition: transform 0.3s ease;
+    }
+
+  </style>
+ </head>
+ <body>
+
+  <div class="container">
+   <img alt="Profile Image" class="profile-img" src="images/bao.jpg" width="600" height="auto"/>
+   <div class="profile-info">
+    <h2>Vy Hoàng Gia Bảo</h2>
+     <span>Nhà thiết kế website</span>
+    <div class="social-icons">
+     <a href="https://www.facebook.com/gia.bao.749115?locale=vi_VN"><i class="fab fa-facebook"></i></a>
+  <a href="tel:+84327772334"><i class="fas fa-phone"></i></a>
+     <a href="https://www.instagram.com/_vhg_uqpi/"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>
+     Có gì khó để mai lo!
+    </p>
+   </div>
+   <div class="section-title">
+    Ảnh của tôi
+   </div>
+   <div class="photo-gallery">
+    <img alt="Photo 1" height="200" src="https://storage.googleapis.com/a1aa/image/48YsbxCEFT4XENpk6evBDfFcBDvz8zPCapgLrv1QXYSzeSFoA.jpg" width="290"/>
+    <img alt="Photo 2" height="200" src="https://storage.googleapis.com/a1aa/image/akeTHpsoEQ1YIqP40jOYo1TDQp5wqQhsfz8CKizHCYZveSFoA.jpg" width="290"/>
+    <img alt="Photo 3" height="200" src="https://storage.googleapis.com/a1aa/image/2UrG3lGy5mL1BxfhMWAjrUL47j47NaHsOc7YAyRHPWScvUBKA.jpg" width="290"/>
+    <img alt="Photo 4" height="200" src="https://storage.googleapis.com/a1aa/image/uEXPrC4zBqpgENpnVnS5l7RvVgUH4MR8ZLv3pXEBn6PtXqAF.jpg" width="290"/>
+   </div>
+   <div class="section-title">
+    Dịch vụ
+   </div>
+ <div class="service-section">
+  <div class="service-container">
+    <div class="service">
+      <h3> Phát triển phần mềm</h3>
+      <p>10.000.000 vnd</p>
+      <p>Phát triển phần mềm tuỳ chỉnh theo yêu cầu</p>
+      <p>Tư vấn và thiết kế giải pháp công nghệ</p>
+      <p>Hỗ trợ bảo trì và nâng cấp phần mềm</p>
+    </div>
+    <div class="service">
+      <h3>Thiết kế website</h3>
+      <p>8.000.000 vnd</p>
+      <p>Thiết kế website tùy chỉnh, responsive</p>
+      <p>Tối ưu SEO và bảo mật</p>
+      <p>Hỗ trợ triển khai và bảo trì website</p>
+    </div>
+    <div class="service">
+      <h3>Quản lý hạ tầng IT</h3>
+      <p>15.000.000 vnd</p>
+      <p>Quản lý và bảo trì hệ thống máy chủ</p>
+      <p>Cài đặt và cấu hình các thiết bị mạng</p>
+      <p>Giám sát và bảo mật hạ tầng IT</p>
+    </div>
+    <div class="service">
+      <h3>Đào tạo công nghệ thông tin</h3>
+      <p>5.000.000 vnd</p>
+      <p>Đào tạo lập trình viên</p>
+      <p>Đào tạo quản trị hệ thống</p>
+      <p>Đào tạo kỹ năng sử dụng phần mềm</p>
+    </div>
+  </div>
+</div>
+
+  </div>
+ </body>
+</html>

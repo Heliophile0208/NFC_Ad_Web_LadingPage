@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+<link rel="icon" type="image/x-icon"
+    href="https://nidtech.vn/wp-content/uploads/2024/11/cropped-Screenshot-2024-10-18-ps.png" />
+<!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Link đến Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <title>Mẫu thẻ thông minh NFC</title>
+  <style>
+    /* Khung nền bên ngoài */
+    .background-container {
+      padding: 20px;
+      background-color: #f0f0f0;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 20px 10px 20px 10px;
+    }
+
+    /* Căn giữa logo */
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    /* Responsive chỉnh sửa */
+  /* Đảm bảo khoảng cách giữa các thẻ và nút trên điện thoại */
+  @media (max-width: 768px) {
+  .flip-container-wrapper {
+  gap: 20px;
+  flex-direction: column;
+  }
+  
+  .flip-container {
+  max-width: 100%;
+  height: auto;
+  }
+  
+  .flip-container {
+  perspective: 2000px;
+  width:450px !important;
+  height: 230px !important;
+  }
+  
+  .flip-card {
+  width: 100%;
+  height: auto;
+  }
+  
+  .contact-button {
+  position: relative;
+  z-index: 1;
+  }
+  }
+  
+  /* Đảm bảo khoảng cách đủ giữa thẻ và nút */
+  .flip-container {
+  margin-bottom: 35px;
+  }
+
+    /* Container chứa các thẻ */
+    .flip-container-wrapper {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin: 20px auto;
+       flex-wrap: wrap;
+    }
+
+    /* Các thẻ lật */
+    .flip-container {
+      perspective: 2000px;
+      width: 400px;
+      height: 250px;
+    }
+
+    .flip-card {
+      width: 100%;
+      height: 100%;
+      border: 1px solid black;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+    }
+
+    .flip-container:hover .flip-card {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-inner {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      backface-visibility: hidden;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .flip-card-front {
+      background-color: #bbb;
+    }
+
+    .flip-card-back {
+      transform: rotateY(180deg);
+      background-color: #ccc;
+    }
+
+    /* Đảm bảo ảnh không bị méo */
+    .flip-card-front img,
+    .flip-card-back img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Nút liên hệ */
+    .contact-button {
+      display: block;
+      width: 100px;
+      margin: 10px auto;
+      padding: 10px;
+      text-align: center;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .contact-button:hover {
+      background-color: #0056b3;
+    }
+        /* Nút cuộn lên đầu trang */
+        .myBtn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        padding: 10px 15px;
+        font-size: 18px;
+        cursor: pointer;
+        z-index: 1000;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .myBtn:hover {
+        background-color: #0056b3;
+        transform: scale(1.1);
+        }
+    </style>
+
+</head>
+
+<body>
+    <button onclick="topFunction()" class="myBtn" id="myBtn" title="Go to top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+  <div class="logo-container">
+    <a href="https://demo.nidtech.vn/">
+      <img src="https://demo.nidtech.vn/assets/img/logo-xoa-phon.png" alt="Logo" class="img-fluid" style="max-width: 200px;">
+    </a>
+  </div>
+  <div class="background-container">
+    <div class="flip-container-wrapper">
+      <div class="flip-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img width="400px" height="250px" src="/card/images/card1_back.JPG" alt="Image 1" />
+            </div>
+            <div class="flip-card-back">
+              <img width="400px" height="250px" src="/card/images/card1_front.JPG" alt="Image 2" />
+            </div>
+          </div>
+        </div>
+        <a href="https://demo.nidtech.vn/#contact" class="contact-button">Liên hệ</a>
+      </div>
+
+      <div class="flip-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img width="400px" height="250px" src="/card/images/card1_back.JPG" alt="Image 1" />
+            </div>
+            <div class="flip-card-back">
+              <img width="400px" height="250px" src="/card/images/card1_front.JPG" alt="Image 2" />
+            </div>
+          </div>
+        </div>
+        <a href="https://demo.nidtech.vn/#contact" class="contact-button">Liên hệ</a>
+      </div>
+
+      <div class="flip-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img width="400px" height="250px" src="/card/images/card1_back.JPG" alt="Image 1" />
+            </div>
+            <div class="flip-card-back">
+              <img width="400px" height="250px" src="/card/images/card1_front.JPG" alt="Image 2" />
+            </div>
+          </div>
+        </div>
+        <a href="https://demo.nidtech.vn/#contact" class="contact-button">Liên hệ</a>
+      </div>
+          <div class="flip-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img width="400px" height="250px" src="/card/images/card1_back.JPG" alt="Image 1" />
+            </div>
+            <div class="flip-card-back">
+              <img width="400px" height="250px" src="/card/images/card1_front.JPG" alt="Image 2" />
+            </div>
+          </div>
+        </div>
+        <a href="https://demo.nidtech.vn/#contact" class="contact-button">Liên hệ</a>
+      </div>
+      
+    </div>
+  </div>
+</body>
+
+</html>
+    <script>
+        var mybutton = document.getElementById("myBtn");
+    
+            // Khi người dùng cuộn xuống 10px từ đỉnh của tài liệu, hiển thị nút
+            window.onscroll = function() {scrollFunction()};
+    
+            function scrollFunction() {
+                if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+    
+            // Khi người dùng nhấp vào nút, cuộn lên đầu trang
+            function topFunction() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth" // Cuộn mượt mà
+                });
+            }
+    </script>

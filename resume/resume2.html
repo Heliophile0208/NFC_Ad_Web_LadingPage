@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Resume</title>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'vi',
+                includedLanguages: 'en,zh-CN',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+<script type="text/javascript">
+    window.onload = function() {
+        // Lấy tất cả các thanh tiến trình
+        var progressBars = document.querySelectorAll('.skills .skill .progress div');
+
+        // Duyệt qua tất cả các thanh và chạy hiệu ứng
+        progressBars.forEach(function(bar) {
+            // Lấy giá trị width từ thuộc tính inline của div
+            var width = bar.getAttribute("data-width"); 
+
+            // Đảm bảo rằng giá trị width được chuyển sang 100% khi trang được tải xong
+            setTimeout(function() {
+                bar.style.width = width;
+            }, 100);  // Delay nhỏ để thanh tiến trình có thời gian chuẩn bị
+        });
+    };
+</script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .profile {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .profile .profile-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+.profile-top { margin-top:10px;}
+
+        .profile img {
+            border-radius: 50%;
+            margin-right: 20px;
+            transition: transform 0.3s ease-in-out;
+
+        }
+
+       #google_translate_element {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    margin: 5px auto;
+    width: 100%;
+}
+
+        .profile-info {
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .profile-info h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #007bff;
+        }
+
+        .profile-info p {
+            margin: 5px 0;
+        }
+
+        .contact-info div {
+            margin-bottom: 10px;
+        }
+
+        .social-links {
+            margin-top: 10px;
+font-size:24px;
+        }
+
+        .social-links a {
+            margin-right: 10px;
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #0056b3;
+        }
+
+        .skills, .education {
+            margin-bottom: 20px;
+        }
+
+        .skills h2, .education h2 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .skills .skill, .education .education-item {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .skills .skill:hover, .education .education-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .skills .skill h3, .education .education-item h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #007bff;
+        }
+
+        .skills .skill p, .education .education-item p {
+            margin: 5px 0;
+        }
+
+        .skills .skill .progress {
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .skills .skill .progress div {
+            height: 10px;
+            background-color: #007bff;
+        }
+
+        .education .education-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .education .education-item img {
+            margin-right: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .education .education-item img:hover {
+            transform: scale(1.1);
+        }
+
+        .education .education-item .education-info {
+            flex: 1;
+        }
+.skills .skill .progress {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+    height: 10px; /* Thêm chiều cao cho thanh tiến trình */
+}
+
+.skills .skill .progress div {
+    height: 100%;
+    background-color: #007bff;
+    width: 0%; /* Mặc định là 0%, thanh sẽ bắt đầu từ đây */
+    transition: width 1s ease-in-out; /* Thêm hiệu ứng mượt mà */
+}
+
+        @media (max-width: 768px) {
+            .profile .profile-top {
+                flex-direction: column;
+            }
+
+            .profile-info {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .profile img {
+                margin-bottom: 20px;
+            }
+
+            .skills .skill, .education .education-item {
+                width: 95%;
+                padding: 15px;
+            }
+
+            .education .education-item {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .education .education-item img {
+                margin-bottom: 20px;
+            }
+
+            #google_translate_element {
+                margin-top: 10px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <div id="google_translate_element"></div>
+            <div class="profile-top">
+                <img alt="Profile Picture" height="150px" src="https://demo.nidtech.vn/template/images/lethikimngan.jpg" width="150px"/>
+            </div>
+            <div class="profile-info">
+                <h1>CHÀO, TÔI TÊN KIM NGÂN</h1>
+                <h3>NHÀ PHÁT TRIỂN WEB</h3>
+                <p>Chào bạn! Tôi là Kim Ngân, một nhà phát triển web với hơn 1 năm kinh nghiệm. Tôi có kinh nghiệm với tất cả các giai đoạn trong chu kỳ phát triển các dự án web động. Tôi có kiến thức sâu rộng về HTML5, CSS3, JavaScript.</p>
+                <div class="contact-info">
+                    <div><strong>Tuổi:</strong> 21</div>
+                    <div><strong>Điện thoại:</strong> +84 928 338 155</div>
+                    <div><strong>Địa chỉ:</strong> 227 Phạm Văn Diêu, khu phố 3, phường Tân Hạnh, thành phố Biên Hòa, tỉnh Đồng Nai</div>
+                    <div><strong>Website:</strong> www.nidtech.vn</div>
+                    <div><strong>Email:</strong> lethikimngan20803@gmail.com</div>
+                    <div><strong>Quốc tịch:</strong> Việt Nam</div>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                </div>
+            </div>
+        </div>
+
+ 
+       <div class="skills">
+            <h2>KỸ NĂNG</h2>
+            <div class="skill">
+    <h3>KỸ NĂNG CHUYÊN MÔN:</h3>
+    <p>HTML & CSS</p>
+    <div class="progress"><div style="width: 0%;" data-width="90%"></div></div> <!-- Cập nhật với data-width -->
+    <p>WordPress</p>
+    <div class="progress"><div style="width: 0%;" data-width="95%"></div></div>
+    <p>JavaScript</p>
+    <div class="progress"><div style="width: 0%;" data-width="70%"></div></div>
+    <p>MS Word</p>
+    <div class="progress"><div style="width: 0%;" data-width="70%"></div></div>
+    <p>Photoshop</p>
+    <div class="progress"><div style="width: 0%;" data-width="65%"></div></div>
+</div>
+            <div class="skill">
+    <h3>KỸ NĂNG MỀM:</h3>
+    <p>Tiếng anh</p>
+    <div class="progress"><div style="width: 0%;" data-width="90%"></div></div> <!-- Cập nhật với data-width -->
+    <p>Sáng tạo</p>
+    <div class="progress"><div style="width: 0%;" data-width="80%"></div></div>
+    <p>Khả năng làm việc nhóm</p>
+    <div class="progress"><div style="width: 0%;" data-width="65%"></div></div>
+</div>
+        </div>
+
+        <div class="education">
+            <h2>BẰNG CẤP</h2>
+            <div class="education-item">
+             
+   <img alt="Education Icon" height="50" src="https://cdn.haitrieu.com/wp-content/uploads/2023/06/Logo-Truong-Cao-dang-Ky-thuat-Dong-Nai-Am-ban.png"><div class="education-info">
+                    <h3>2021 - 2025</h3>
+                    <p>Công Nghệ Thông Tin (Ứng Dụng Phần Mềm)</p>
+                    <p>Cao Đẳng Kỹ Thuật Đồng Nai</p>
+                    <p>Tôi đã hoàn thành bằng cấp này tại cơ sở giáo dục uy tín này. Tôi đã hoàn thành tất cả các tín chỉ mà không gặp bất kỳ vấn đề nào và đạt được loại xuất sắc toàn năm.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

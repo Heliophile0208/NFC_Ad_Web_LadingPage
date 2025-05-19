@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Kim Ngân</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'vi',
+      includedLanguages: 'en,zh-CN',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript">
+    window.onload = function() {
+        // Lấy tất cả các thanh tiến trình
+        var progressBars = document.querySelectorAll('.skills .skill .progress div');
+
+        // Duyệt qua tất cả các thanh và chạy hiệu ứng
+        progressBars.forEach(function(bar) {
+            // Lấy giá trị width từ thuộc tính inline của div
+            var width = bar.getAttribute("data-width"); 
+
+            // Đảm bảo rằng giá trị width được chuyển sang 100% khi trang được tải xong
+            setTimeout(function() {
+                bar.style.width = width;
+            }, 100);  // Delay nhỏ để thanh tiến trình có thời gian chuẩn bị
+        });
+    };
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <style>
+#google_translate_element {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+.goog-te-gadget {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.goog-te-gadget .goog-te-combo {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.goog-te-gadget .goog-te-combo:hover {
+    border-color: #666;
+}
+
+.goog-te-combo option {
+    padding: 5px;
+}
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 10px 0;
+            font-size: 36px;
+            color: #222;
+        }
+        header h2 {
+            margin: 5px 0;
+            font-size: 18px;
+            color: #666;
+        }
+    .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    background-image: linear-gradient(45deg, #ff6347, #ff1493, #8a2be2, #00bfff, #32cd32);
+    background-size: 400% 400%;
+    animation: rotateBorder 5s linear infinite, shadowEffect 5s ease-in-out infinite;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes rotateBorder {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes shadowEffect {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+}
+        .section-title {
+            font-size: 22px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            color: #222;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .section-title i {
+            margin-right: 10px;
+            color: #555;
+        }
+        .section-content {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+.skills .skill .progress {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+    height: 10px; /* Thêm chiều cao cho thanh tiến trình */
+}
+.skills {
+    margin-bottom:20px;
+}
+.skills .skill .progress div {
+    height: 100%;
+    background-color: #007bff;
+    width: 0%; /* Mặc định là 0%, thanh sẽ bắt đầu từ đây */
+    transition: width 1s ease-in-out; /* Thêm hiệu ứng mượt mà */
+}
+
+        .languages ul, .hobbies ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .languages ul li, .hobbies ul li {
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+        .languages ul li i, .hobbies ul li i {
+            margin-right: 8px;
+            color: #4CAF50;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            header h1 {
+                font-size: 28px;
+            }
+            header h2 {
+                font-size: 16px;
+            }
+            .section-title {
+                font-size: 20px;
+            }
+            .section-content {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+<div id="google_translate_element"></div>
+        <header>
+            <img src="https://demo.nidtech.vn/template/images/lethikimngan.jpg" alt="Profile picture of Kim Ngân" class="profile-img">
+            <h1>LÊ THỊ KIM NGÂN</h1>
+            <h2>NHÀ PHÁT TRIỂN WEBSITE</h2>
+        </header>
+        <section class="contact-info">
+            <div class="section-title">
+            <i class="fas fa-id-card"></i> LIÊN HỆ
+            </div>
+            <div class="section-content">
+                <p><i class="fas fa-phone"></i>
+&nbsp; +84 928 338 155</p>
+                <p><i class="fas fa-envelope"></i>
+&nbsp; lethikimngan20803@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i>
+ &nbsp; 227 Phạm Văn Diêu, khu phố 3, phường Tân Hạnh, thành phố Biên Hòa, tỉnh Đồng Nai</p>
+            </div>
+        </section>
+        <section class="about-me">
+            <div class="section-title">
+                <i class="fas fa-user"></i> GIỚI THIỆU VỀ TÔI
+            </div>
+            <div class="section-content">
+                <p>- Tôi là Kim Ngân, một nhà phát triển website có kinh nghiệm, tận tâm, và sáng tạo trong việc xây dựng các giải pháp web tối ưu. Đam mê của tôi là tạo ra những trang web không chỉ đẹp mắt mà còn hoạt động mượt mà, đáp ứng tốt nhu cầu của người dùng. </p><p>- Tôi luôn cập nhật các công nghệ mới nhất và áp dụng chúng vào công việc để mang lại hiệu quả cao nhất. Với tính chuyên nghiệp, linh hoạt, và khả năng lắng nghe khách hàng, tôi cam kết mang đến những sản phẩm web chất lượng, đáp ứng mọi yêu cầu và mong đợi của khách hàng.
+</p>            </div>
+        </section>
+        <section class="work-experience">
+            <div class="section-title">
+                <i class="fas fa-briefcase"></i> KINH NGHIỆM LÀM VIỆC
+            </div>
+            <div class="section-content">
+                <p><strong>CÔNG TY TNHH NIDTECH</strong> - Nhà phát triển website (11/2024 - Nay)</p>
+                <p>Phát triển và tối ưu hóa các trang web cho doanh nghiệp, tư vấn giải pháp công nghệ phù hợp với nhu cầu kinh doanh. Tham gia thiết kế giao diện người dùng, cải thiện trải nghiệm người dùng và đảm bảo hiệu suất website luôn ổn định và bảo mật.</p>
+               
+            </div>
+        </section>
+        <section class="education">
+            <div class="section-title">
+                <i class="fas fa-graduation-cap"></i> HỌC VẤN
+            </div>
+            <div class="section-content">
+                <p><strong>CAO ĐẲNG KỸ THUẬT ĐỒNG NAI</strong> - Công Nghệ Thông Tin (2022 - 2025)</p>
+                
+            </div>
+        </section>
+        <section class="references">
+            <div class="section-title">
+                <i class="fas fa-user-friends"></i> NGƯỜI GIỚI THIỆU
+            </div>
+            <div class="section-content">
+                <p><strong>NGUYỄN ĐẶNG HOÀNG KHANH</strong> - Giám Đốc - Công Ty TNHH Nidtech</p>
+                <p>Tel: 0947-22-88-44</p>
+                <p>Email: khanhnguyenit89@gmail.com</p>
+            </div>
+        </section>
+        <section class="skills">
+            <div class="section-title">
+                <i class="fas fa-tools"></i> KỸ NĂNG
+            </div>
+            <div class="skill">
+    <h3>KỸ NĂNG CHUYÊN MÔN:</h3>
+    <p>HTML & CSS</p>
+    <div class="progress"><div style="width: 0%;" data-width="90%"></div></div> <!-- Cập nhật với data-width -->
+    <p>WordPress</p>
+    <div class="progress"><div style="width: 0%;" data-width="95%"></div></div>
+    <p>JavaScript</p>
+    <div class="progress"><div style="width: 0%;" data-width="70%"></div></div>
+    <p>MS Word</p>
+    <div class="progress"><div style="width: 0%;" data-width="70%"></div></div>
+    <p>Photoshop</p>
+    <div class="progress"><div style="width: 0%;" data-width="65%"></div></div>
+</div>
+            <div class="skill">
+    <h3>KỸ NĂNG MỀM:</h3>
+    <p>Tiếng anh</p>
+    <div class="progress"><div style="width: 0%;" data-width="90%"></div></div> <!-- Cập nhật với data-width -->
+    <p>Sáng tạo</p>
+    <div class="progress"><div style="width: 0%;" data-width="80%"></div></div>
+    <p>Khả năng làm việc nhóm</p>
+    <div class="progress"><div style="width: 0%;" data-width="65%"></div></div>
+</div>
+
+        </section>
+        <section class="languages">
+            <div class="section-title">
+                <i class="fas fa-language"></i> NGÔN NGỮ
+            </div>
+            <div class="section-content">
+                <ul>
+                    <li><i class="fas fa-check"></i>ENGLISH</li>
+              <li><i class="fas fa-check"></i>中国
+</li>
+<li><i class="fas fa-check"></i>TIẾNG VIỆT</li>
+                    
+                </ul>
+            </div>
+        </section>
+        <section class="hobbies">
+            <div class="section-title">
+                <i class="fas fa-heart"></i> SỞ THÍCH
+            </div>
+            <div class="section-content">
+                <ul>
+                    <li><i class="fas fa-check"></i>ĐỌC SÁCH</li>
+                    <li><i class="fas fa-check"></i>DU LỊCH</li>
+                    <li><i class="fas fa-check"></i>SÁNG TẠO NỘI DUNG</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
