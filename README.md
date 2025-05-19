@@ -1,6 +1,6 @@
 # LANDING PAGE QUẢNG CÁO DỊCH VỤ THIẾT KẾ - IN ẤN - LẬP TRÌNH THẺ NFC
 
-**Landing page quảng cáo NFC ** là website giới thiệu và quảng bá dịch vụ **thiết kế - in ấn - lập trình thẻ NFC**. Chúng tôi giúp bạn biến những chiếc thẻ bình thường thành công cụ quảng cáo thông minh – chỉ cần chạm là khách hàng đã có thể truy cập vào website, video, danh thiếp số hoặc thông tin sản phẩm của bạn.
+**Landing page quảng cáo NFC** là website giới thiệu và quảng bá dịch vụ **thiết kế - in ấn - lập trình thẻ NFC**. Chúng tôi giúp bạn biến những chiếc thẻ bình thường thành công cụ quảng cáo thông minh – chỉ cần chạm là khách hàng đã có thể truy cập vào website, video, danh thiếp số hoặc thông tin sản phẩm của bạn.
 
 ## 💡 Dịch vụ của chúng tôi
 
